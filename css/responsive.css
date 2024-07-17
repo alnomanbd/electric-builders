@@ -1,0 +1,61 @@
+@media screen and (max-width:800px) {
+    /* navbar */
+    .navbar-main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-main .navbar-item{
+        margin-top: 20px;
+    }
+    /* end navbar */
+
+    /* Banner */
+    .fifty-off{
+        left: 13%;
+    }
+    /* Popular */
+    .popular-main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:500px) {
+    /* navbar */
+    .nav-hamburger-menu{
+        display: block;
+    }
+    .navbar-main .navbar-item{
+        display: none;
+    }
+    .navbar-main{
+        flex-direction: row;
+        align-items: center;
+    }
+    /* navbar end */
+    /* banner */
+    .banner-main{
+        flex-direction: column;
+    }
+    .banner-image{
+        width: 100%;
+    }
+    /* Popular */
+    .popular-main{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* QNA */
+    .qna-main{
+        flex-direction: column;
+        height: auto;
+    }
+    .qna-child{
+        width: 100%;
+    }
+    .form-container{
+        flex-direction: column;
+    }
+    .form-field{
+        width: 100%;
+    }
+}

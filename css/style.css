@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar-wrapper{
+    background-color: rgb(71, 85, 105);
+}
+.navbar-main{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.navbar-main h1{
+    color: #fff;
+}
+.nav-menu-btn{
+    background-color: #000;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.nav-hamburger-menu{
+    color: white;
+    display: none;
+}
+
+/* Main Content Starts from here */
+/* Banner Styles */
+.main-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 400px;
+    border: 1px solid red;
+}
+
+.banner-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 10px;
+}
+
+.banner-image{
+    width: 47%;
+    border: 0px solid green;
+    position: relative;
+}
+.banner-image img{
+    width: 100%;
+    border-radius: 10px;
+}
+.fifty-off{
+    background-color: rgba(0, 0, 0, 0.700);
+    color: white;
+    width: max-content;
+    padding: 10px 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 45%;
+    left: 35%;
+}
+.banner-text{
+    width: 47%;
+    text-align: center;
+}
+.banner-btn{
+    border: 2px solid gray;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Popular section styles */
+.popular-main{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.card{
+    min-height: 200px;
+    padding: 10px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.432);
+    border-radius: 20px;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+/* Button section styles */
+.button-main{
+    margin-top: 50px;
+    border: 1px solid green;
+    height: 200px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+.button-child-1{
+    background-color: red;
+    grid-column: 1/span 7;
+    grid-row: 1/span 6;
+    border-radius: 70px;
+    position: relative;
+}
+.button-child-2{
+    background-color: green;
+    grid-column: 8/span 5;
+    grid-row: 1/span 6;
+    border-radius: 70px;
+    position: relative;
+}
+.button-child-3{
+    background-color: blue;
+    grid-column: 1/span 5;
+    grid-row: 7/span 6;
+    border-radius: 70px;
+    position: relative;
+}
+.button-child-4{
+    background-color: pink;
+    grid-column: 6/span 7;
+    grid-row: 7/ span 6;
+    border-radius: 70px;
+    position: relative;
+}
+
+.button-main img{
+    width: 100%;
+    height: 100%;
+    border-radius: 70px;
+    filter: brightness(20%);
+}
+
+.icon{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+
+/* QNA Styles */
+.qna-main{
+    margin-top: 50px;
+    border: 0px solid green;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.qna-child{
+    width: 45%;
+    border: 0px solid tomato;
+}
+.qna-child img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.form-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-field{
+    width: 48%;
+}
+
+.form-field-text-area{
+    width: 100%;
+}
+
+.form-container input, textarea, select{
+    width: 100%;
+    border: 1px solid blue;
+    height: 50px;
+}
+
+.qna-submit-button{
+    background-color: blueviolet;
+    color: white;
+    padding: 20px 60px;
+    border-radius: 20px;
+    border: none;
+    margin-left: auto;
+    display: block;
+}
